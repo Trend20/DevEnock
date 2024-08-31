@@ -9,8 +9,8 @@ const HomeSection4 = dynamic(() => import("../components/home/Section4"));
 const HomeSection5 = dynamic(() => import("../components/home/Section5"));
 const HomeSection6 = dynamic(() => import("../components/home/Section6"));
 
-const FloatingNavbar = dynamic(() =>
-  import("../components/navbar/FloatingNavbar")
+const FloatingNavbar = dynamic(
+  () => import("../components/navbar/FloatingNavbar"),
 );
 const ScrollToTop = dynamic(() => import("../components/common/ScrollToTop"));
 
