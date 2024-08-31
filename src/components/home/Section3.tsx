@@ -1,6 +1,5 @@
 import ConstraintedBox from "../core/ConstraintedBox";
 import ResponsiveBox from "../core/ResponsiveBox";
-import GridBox from "../core/GridBox";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceItem from "./ui/ExperienceItem";
 import experiences from "../../data/experiences";
@@ -14,16 +13,15 @@ const HomeSection3 = ({ id }: { id: string }) => {
     >
       <ConstraintedBox classNames="p-4 py-16">
         <SectionTitle>Experiences</SectionTitle>
-
-        {/*<GridBox classNames="justify-items-center w-full mt-16">*/}
-        <ExperienceSlider>
-          {experiences.map((experience, index) => {
-            return (
-              <ExperienceItem key={`experience-${index}`} data={experience} />
-            );
-          })}
-        </ExperienceSlider>
-        {/*</GridBox>*/}
+        <div className="mt-8 w-full">
+          <ExperienceSlider>
+            {experiences.map((experience, index) => {
+              return (
+                <ExperienceItem key={`experience-${index}`} data={experience} />
+              );
+            })}
+          </ExperienceSlider>
+        </div>
       </ConstraintedBox>
     </ResponsiveBox>
   );
