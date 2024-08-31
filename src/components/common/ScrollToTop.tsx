@@ -32,9 +32,13 @@ const ScrollToTop = () => {
   return (
     <div className={styles.topToBottom}>
       {showTopBtn ? (
-        <button onClick={goToTop} className={styles.btnStyle}>
-          <FontAwesomeIcon icon={faArrowUpLong} className={styles.iconStyle} />
-        </button>
+        <div
+          onClick={goToTop}
+          aria-label="scroll to top"
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-[var(--primaryColor)] text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+        >
+          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
+        </div>
       ) : null}
     </div>
   );
