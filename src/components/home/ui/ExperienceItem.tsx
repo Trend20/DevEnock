@@ -7,7 +7,7 @@ import Column from "../../core/Column";
 
 const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
   return (
-    <CardBox classNames="p-4 items-center text-center bg-[var(--textColor10)] group min-h-80">
+    <CardBox classNames="p-4 items-center text-center bg-[var(--textColor10)] group min-h-80 w-full">
       <Column classNames="items-center justify-between w-full h-full gap-12">
         <Column classNames="items-center justify-start">
           <FontAwesomeIcon

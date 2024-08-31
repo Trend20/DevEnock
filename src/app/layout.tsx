@@ -26,9 +26,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Rajput",
+  title: "Enock Omondi",
   description:
-    "Nikhil Rajput is a proficient Software Engineer and Full Stack Developer from India, skilled in front-end and back-end development using modern tech stacks.",
+    "Enock Omondi is a proficient Software Engineer from Nairobi, Kenya, skilled in front-end and back-end development using modern tech stacks.",
   robots: {
     index: true,
     follow: true,
@@ -48,18 +48,7 @@ export const metadata: Metadata = {
       type: "image/svg+xml",
     },
   ],
-  keywords: [
-    "nikhil rajput",
-    "nikhil",
-    "nixrajput",
-    "nikhil-rajput",
-    "rajput nikhil",
-    "founder of nixlab",
-    "nixlab founder",
-    "full stack developer",
-    "indian developer",
-    "nixrajput github",
-  ],
+  keywords: ["enock omondi"],
 };
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {

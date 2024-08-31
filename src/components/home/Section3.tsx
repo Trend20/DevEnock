@@ -4,6 +4,7 @@ import GridBox from "../core/GridBox";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceItem from "./ui/ExperienceItem";
 import experiences from "../../data/experiences";
+import ExperienceSlider from "@/components/common/ExperienceSlider";
 
 const HomeSection3 = ({ id }: { id: string }) => {
   return (
@@ -14,13 +15,15 @@ const HomeSection3 = ({ id }: { id: string }) => {
       <ConstraintedBox classNames="p-4 py-16">
         <SectionTitle>Experiences</SectionTitle>
 
-        <GridBox classNames="justify-items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-16">
+        {/*<GridBox classNames="justify-items-center w-full mt-16">*/}
+        <ExperienceSlider>
           {experiences.map((experience, index) => {
             return (
               <ExperienceItem key={`experience-${index}`} data={experience} />
             );
           })}
-        </GridBox>
+        </ExperienceSlider>
+        {/*</GridBox>*/}
       </ConstraintedBox>
     </ResponsiveBox>
   );
