@@ -5,7 +5,7 @@ const TalkButton = () => {
   return (
     <Link
       className="app__filled_btn min-w-[12rem]"
-      href={Strings.telegramLink}
+      href={Strings.twitterLink}
       target="_blank"
     >
       Let&apos;s Talk

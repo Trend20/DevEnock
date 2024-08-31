@@ -20,7 +20,6 @@ const HomeSection6 = ({ id }: { id: string }) => {
             {socialLinks.map((link, index) => {
               return (
                 <SocialButton
-                  key={`social-link-${index}`}
                   text={link.text}
                   icon={link.icon}
                   url={link.url}
