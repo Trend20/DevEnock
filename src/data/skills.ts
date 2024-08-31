@@ -11,13 +11,13 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "TypeScript",
-        level: SkillLevel.Intermediate,
+        level: SkillLevel.Expert,
         icon: "/skills/typescript.svg",
       },
       {
-        title: "Dart",
+        title: "Golang",
         level: SkillLevel.Expert,
-        icon: "/skills/dart.svg",
+        icon: "/skills/go.svg",
       },
     ],
   },
@@ -41,13 +41,18 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "CSS",
-        level: SkillLevel.Intermediate,
+        level: SkillLevel.Expert,
         icon: "/skills/css.svg",
       },
       {
         title: "SASS",
         level: SkillLevel.Intermediate,
         icon: "/skills/sass.svg",
+      },
+      {
+        title: "TailwindCSS",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/tailwindcss.svg",
       },
       {
         title: "Redux Toolkit",
@@ -70,29 +75,24 @@ const skills: ISkillListItem[] = [
         icon: "/skills/express.svg",
       },
       {
-        title: "Socket.io",
-        level: SkillLevel.Intermediate,
-        icon: "/skills/socket-io.png",
+        title: "Golang",
+        level: SkillLevel.Expert,
+        icon: "/skills/go.svg",
       },
-      // {
-      //   title: "Nest.js",
-      //   level: SkillLevel.Begginer,
-      //   icon: "/skills/nestjs.svg",
-      // },
+      {
+        title: "Nest.js",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/nestjs.svg",
+      },
     ],
   },
   {
     title: "Mobile App Development",
     items: [
       {
-        title: "Flutter",
-        level: SkillLevel.Expert,
-        icon: "/skills/flutter.svg",
-      },
-      {
-        title: "GetX",
-        level: SkillLevel.Expert,
-        icon: "/skills/getx.png",
+        title: "React Native",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/native.svg",
       },
     ],
   },
@@ -138,41 +138,6 @@ const skills: ISkillListItem[] = [
         title: "GitHub",
         level: SkillLevel.Expert,
         icon: "/skills/github.svg",
-      },
-    ],
-  },
-  {
-    title: "Miscellaneous",
-    items: [
-      {
-        title: "Firebase",
-        level: SkillLevel.Intermediate,
-        icon: "/skills/firebase.svg",
-      },
-      {
-        title: "Ubuntu",
-        level: SkillLevel.Intermediate,
-        icon: "/skills/ubuntu.png",
-      },
-    ],
-  },
-  {
-    title: "Nontechnical Skills",
-    items: [
-      {
-        title: "Problem Solving",
-        level: SkillLevel.Expert,
-        icon: "/images/logical-thinking.png",
-      },
-      {
-        title: "Collaboration",
-        level: SkillLevel.Expert,
-        icon: "/images/collaboration.png",
-      },
-      {
-        title: "Analytical Skills",
-        level: SkillLevel.Expert,
-        icon: "/images/analytical-skills.png",
       },
     ],
   },

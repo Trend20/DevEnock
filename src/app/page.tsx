@@ -19,9 +19,9 @@ const Home = () => {
     <PageBox>
       <FloatingNavbar className="app_nav" navItems={menuItems} />
       <HomeSection1 id="hero" />
+      <HomeSection4 id="skills" />
       <HomeSection2 id="services" />
       <HomeSection3 id="experiences" />
-      <HomeSection4 id="skills" />
       <HomeSection5 id="projects" />
       <HomeSection6 id="contact" />
       <ScrollToTop />
