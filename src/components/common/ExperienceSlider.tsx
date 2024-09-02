@@ -36,6 +36,7 @@ const ExperienceSlider = ({
         responsive={responsive}
         ssr={true}
         infinite={true}
+        autoPlay={false}
         arrows={true}
         autoPlaySpeed={3000}
         keyBoardControl={true}

@@ -22,8 +22,7 @@ export interface IExperienceItem {
   endDate: string;
   isCurrentJob: boolean;
   location: string;
-  shortDescription: string;
-  description: string;
+  achievements: any[];
 }
 
 export enum RepoType {

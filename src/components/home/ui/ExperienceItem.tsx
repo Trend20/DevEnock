@@ -1,50 +1,32 @@
 import type { IExperienceItem } from "../../../types";
-import { Balancer } from "react-wrap-balancer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import CardBox from "../../core/CardBox";
 import Column from "../../core/Column";
+import { FaRegCheckSquare } from "react-icons/fa";
 
 const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
   return (
-    <CardBox classNames="p-4 items-center text-center bg-[var(--textColor10)] group min-h-80 w-full">
-      <Column classNames="items-center justify-between w-full h-full gap-12">
-        <Column classNames="items-center justify-start">
-          <FontAwesomeIcon
-            icon={faTrophy}
-            className="text-3xl/6 md:text-4xl/6 text-[var(--primaryColor)]"
-          />
-
-          <p className="text-lg/6 font-semibold mt-4">{data.designation}</p>
-
-          <p className="text-[var(--textColorLight)] text-base/6 font-medium">
+    <CardBox classNames="p-4 items-start bg-[var(--textColor10)] group min-h-100 w-full">
+      <Column classNames="justify-between w-full h-full gap-12">
+        <Column classNames="justify-start">
+          <p className="text-4xl font-bold mt-4">{data.designation}</p>
+          <p className="text-[var(--textColorLight)] text-sm font-medium py-2 uppercase">
             {data.company}
           </p>
-        </Column>
-
-        <div
-          className={`flex flex-row relative gap-1 items-center justify-center px-2 py-0.5 border border-[var(--textColor)] text-[var(--textColor)]"
-          } rounded-[var(--borderRadius)]`}
-        >
-          <p className="text-xs/6 font-medium uppercase">{data.startDate}</p>
-
-          <span>-</span>
-
-          <p className="text-xs/6 font-medium uppercase">
-            {data.isCurrentJob ? "Present" : data.endDate}
+          <p className="text-[var(--textColorLight)] text-base/6 font-medium mt-2 uppercase">
+            {data.startDate} - {data.endDate}
           </p>
-        </div>
-
-        <p className="text-base/6 font-normal">
-          <Balancer>{data.shortDescription}</Balancer>
-        </p>
+        </Column>
+        <Column classNames="space-y-5 w-full">
+          {data.achievements.map((achievement, index) => (
+            <div className="flex items-start">
+              <FaRegCheckSquare size={30} className="mr-3" />
+              <p className="text-sm leading-6" key={index}>
+                {achievement.desc}
+              </p>
+            </div>
+          ))}
+        </Column>
       </Column>
-
-      <div className="absolute left-0 right-0 top-[-200%] bottom-0 w-full h-auto min-h-full scroll-smooth overflow-hidden overflow-y-auto p-4 bg-zinc-800 hidden invisible opacity-0 transition duration-500 ease-in-out slide_in group-hover:flex group-hover:top-0 group-hover:visible group-hover:opacity-100 group-hover:z-10">
-        <p className="text-base/6 font-normal m-auto text-center">
-          <Balancer preferNative={false}> {data.description}</Balancer>
-        </p>
-      </div>
     </CardBox>
   );
 };

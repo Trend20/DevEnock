@@ -12,7 +12,7 @@ const HomeSection3 = ({ id }: { id: string }) => {
       id={id}
     >
       <ConstraintedBox classNames="p-4 py-16">
-        <SectionTitle>Experiences</SectionTitle>
+        <SectionTitle>Experience</SectionTitle>
         <div className="mt-8 w-full">
           <ExperienceSlider>
             {experiences.map((experience, index) => {
