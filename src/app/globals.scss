@@ -429,7 +429,7 @@ h6 {
     position: absolute;
     top: 0;
     left: -100%;
-    background: var(--secondaryColor);
+    background-color:transparent;
     transition: all 0.5s ease;
     z-index: -1;
   }

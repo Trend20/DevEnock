@@ -6,7 +6,9 @@ const LocalConfig = {
     NEXT_PUBLIC_GTAG_ID: process.env.NEXT_PUBLIC_GTAG_ID,
     NEXT_PUBLIC_GITHUB_TOKEN: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
     NEXT_PUBLIC_VERCEL_TOKEN: process.env.NEXT_PUBLIC_VERCEL_TOKEN,
-    NEXT_PUBLIC_RESUME_LINK: process.env.NEXT_PUBLIC_RESUME_LINK || "#",
+    NEXT_PUBLIC_RESUME_LINK:
+      process.env.NEXT_PUBLIC_RESUME_LINK ||
+      "https://docs.google.com/document/d/1TEtWx3ahKPaOStIMh5woy3ho3RipXWSC/edit?usp=sharing&ouid=100849730782055987462&rtpof=true&sd=true",
   },
 };
 

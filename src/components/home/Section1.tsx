@@ -8,6 +8,7 @@ import socialLinks from "../../data/socialLinks";
 import ResumeButton from "./ui/ResumeButton";
 import TalkButton from "./ui/TalkButton";
 import { FlipWords } from "../common/FlipWords";
+import Image from "next/image";
 
 const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
   return (
@@ -17,6 +18,15 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
     >
       <ConstraintedBox classNames="px-4 py-8 pt-16 z-20 items-center justify-center">
         <Column classNames="w-full items-center justify-center">
+          <div className="about-img">
+            <Image
+              src={"/images/profile.png"}
+              width={100}
+              height={100}
+              alt={"profile-pic"}
+              className="rounded-full w-full object-cover"
+            />
+          </div>
           <div className="inline-flex items-center">
             <p className="text-2xl/normal sm:text-3xl/normal md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal dark:text-[var(--textColor)] text-[var(--textColor)] font-bold text-center">
               Hi there, I am
@@ -31,7 +41,6 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
           </p>
 
           <div className="gap-4 mt-12 lg:mt-16 flex flex-col md:flex-row">
-            <TalkButton />
             <ResumeButton />
           </div>
         </Column>
