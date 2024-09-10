@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectItem = ({ project }: { project: IProjectItem }) => {
   return (
-    <CardBox classNames="aspect-[3/5] max-h-[30rem] items-center justify-between bg-[var(--textColor10)] group slide_in">
+    <CardBox classNames="aspect-[3/5] max-h-[33rem] items-center bg-[var(--textColor10)] group slide_in">
       <Column classNames="w-full items-center justify-start">
         <Image
           src={project.icon}
@@ -26,7 +26,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
           className="w-full h-60 object-cover aspect-square"
         />
         <p className="text-lg/6 font-semibold mt-4">{project.title}</p>
-        <div className="flex w-full items-center justify-center space-x-3 mt-6">
+        <div className="flex w-full items-center justify-center space-x-3 py-3">
           {project.githubUrl !== "" && (
             <Link
               href={project.githubUrl}
@@ -49,12 +49,12 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
           )}
         </div>
       </Column>
-      <Column classNames="w-full items-center">
-        <p className="text-center text-base/6">
+      <Column classNames="w-full items-center py-5">
+        <p className="text-center text-base/6 w-full">
           <Balancer>{project.description}</Balancer>
         </p>
         {project.tags && project.tags.length > 0 ? (
-          <Row classNames="w-full items-center justify-center flex-wrap mt-4">
+          <Row classNames="w-full items-center justify-center flex-wrap mt-2">
             {project.tags.map((tag, i) => {
               return (
                 <p
