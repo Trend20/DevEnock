@@ -3,7 +3,6 @@ import PageBox from "../components/core/PageBox";
 import { menuItems } from "../data/navMenus";
 import HomeSection1 from "../components/home/Section1";
 
-const HomeSection2 = dynamic(() => import("../components/home/Section2"));
 const HomeSection3 = dynamic(() => import("../components/home/Section3"));
 const HomeSection4 = dynamic(() => import("../components/home/Section4"));
 const HomeSection5 = dynamic(() => import("../components/home/Section5"));
@@ -20,7 +19,6 @@ const Home = () => {
       <FloatingNavbar className="app_nav" navItems={menuItems} />
       <HomeSection1 id="hero" />
       <HomeSection4 id="skills" />
-      <HomeSection2 id="services" />
       <HomeSection3 id="experiences" />
       <HomeSection5 id="projects" />
       <HomeSection6 id="contact" />

@@ -41,10 +41,9 @@ export interface IProjectItem {
   title: string;
   description: string;
   icon: string;
-  repoType: RepoType;
   projectType?: ProjectType;
-  githubUrl?: string;
-  url?: string;
+  githubUrl?: string | any;
+  url?: string | any;
   tags?: string[];
   sceenshots?: string[];
   about?: string;
