@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../utils/cn";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandHoldingDollar } from "@fortawesome/free-solid-svg-icons";
 import { INavItem } from "../../types";
 
 const FloatingNavbar = ({

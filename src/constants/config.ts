@@ -8,7 +8,7 @@ const LocalConfig = {
     NEXT_PUBLIC_VERCEL_TOKEN: process.env.NEXT_PUBLIC_VERCEL_TOKEN,
     NEXT_PUBLIC_RESUME_LINK:
       process.env.NEXT_PUBLIC_RESUME_LINK ||
-      "https://docs.google.com/document/d/1TEtWx3ahKPaOStIMh5woy3ho3RipXWSC/edit?usp=sharing&ouid=100849730782055987462&rtpof=true&sd=true",
+      "https://docs.google.com/document/d/1nuNEpXaZTY3MmR86uAL6TmLzLPMMRGXGloV9jNl5lHM/edit?usp=sharing",
   },
 };
 
