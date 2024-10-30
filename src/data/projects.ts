@@ -9,7 +9,7 @@ const projects: IProjectItem[] = [
     icon: "/images/more.png",
     githubUrl: "",
     url: "https://www.more.co.ke/",
-    tags: ["NextJS", "Redux Toolkit", "AWS", "Typescript"],
+    tags: ["NextJS", "NodeJS", "MySQL", "Zustand", "AWS", "Typescript"],
     sceenshots: ["/screenshots/rippl.png"],
   },
   {
@@ -20,7 +20,15 @@ const projects: IProjectItem[] = [
     icon: "/images/crony.png",
     githubUrl: "https://github.com/Trend20/Lcluster",
     url: "https://code-crony.vercel.app/",
-    tags: ["NextJS", "Redux Toolkit", "TailwindCSS", "Typescript", "NextAuth"],
+    tags: [
+      "NextJS",
+      "Redux Toolkit",
+      "PrismaORM",
+      "MongoDB",
+      "TailwindCSS",
+      "Typescript",
+      "NextAuth",
+    ],
   },
   {
     id: "brufinance",
@@ -29,7 +37,7 @@ const projects: IProjectItem[] = [
     icon: "/images/bru.png",
     githubUrl: "",
     url: "https://bru.finance/",
-    tags: ["NextJS", "Typescript", "AWS", "Ethereum"],
+    tags: ["NextJS", "Typescript", "NodeJS", "AWS", "Ethereum"],
   },
 ];
 

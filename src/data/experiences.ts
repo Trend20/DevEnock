@@ -97,10 +97,10 @@ import { IExperienceItem } from "../types";
 
 const experiences: IExperienceItem[] = [
   {
-    designation: "Senior Frontend Engineer",
+    designation: "FullStack Engineer",
     company: "Riverbank Solutions Limited",
     startDate: "April 2023",
-    endDate: "July 2024",
+    endDate: "August 2024",
     isCurrentJob: false,
     location: "Kilimani, Nairobi, Kenya",
     achievements: [
@@ -134,7 +134,7 @@ const experiences: IExperienceItem[] = [
     designation: "FullStack Developer",
     company: "Whrrl Tech",
     startDate: "June 2022",
-    endDate: "May 2023",
+    endDate: "August 2023",
     isCurrentJob: false,
     location: "Remote",
     achievements: [
@@ -229,6 +229,28 @@ const experiences: IExperienceItem[] = [
       {
         id: 6,
         desc: "Streamlined build process, reducing build times by 15%.",
+      },
+    ],
+  },
+  {
+    designation: "Frontend Developer",
+    company: "Outgrowify",
+    startDate: "October 2019",
+    endDate: "December 2020",
+    isCurrentJob: false,
+    location: "Remote",
+    achievements: [
+      {
+        id: 1,
+        desc: "Integrated RESTful APIs endpoints with the frontend, implementing efficient state management solutions using Redux to handle complex data flows.",
+      },
+      {
+        id: 2,
+        desc: "Collaborated with UX designers to translate wireframes and mockups into responsive web applications, ensuring pixel-perfect implementation and cross-browser compatibility.\n",
+      },
+      {
+        id: 3,
+        desc: "Participated in code reviews, fostering best practices in React development and improving team productivity by 20%.\n",
       },
     ],
   },
